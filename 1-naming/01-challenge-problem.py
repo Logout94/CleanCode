@@ -27,14 +27,14 @@ class Rectangle:
         print('End Point Y-Axis (Bottom Left): ' + str(self.bottom_left))
 
 
-def build_stuff():
-    top_left = Point(50, 100)
+def get_rect(coordX, coordY):
+    top_left = Point(coordX, coordY)
     rect = Rectangle(top_left, 90, 10)
 
     return rect
 
 
-my_rect = build_stuff()
+my_rect = get_rect(50, 100)
 
 print(my_rect.area())
 my_rect.print()
