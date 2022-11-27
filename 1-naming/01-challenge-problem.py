@@ -25,6 +25,7 @@ class Rectangle:
         print('Starting Point (Y)): ' + str(self.top_left.coordY))
         print('End Point X-Axis (Top Right): ' + str(self.top_right))
         print('End Point Y-Axis (Bottom Left): ' + str(self.bottom_left))
+        print('Area : ' + str(self.area()))
 
 
 def get_rect(top_left_X, top_left_Y):
@@ -35,6 +36,4 @@ def get_rect(top_left_X, top_left_Y):
 
 
 my_rect = get_rect(50, 100)
-
-print(my_rect.area())
 my_rect.print()
