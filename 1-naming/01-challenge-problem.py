@@ -27,8 +27,8 @@ class Rectangle:
         print('End Point Y-Axis (Bottom Left): ' + str(self.bottom_left))
 
 
-def get_rect(coordX, coordY):
-    top_left = Point(coordX, coordY)
+def get_rect(top_left_X, top_left_Y):
+    top_left = Point(top_left_X, top_left_Y)
     rect = Rectangle(top_left, 90, 10)
 
     return rect
