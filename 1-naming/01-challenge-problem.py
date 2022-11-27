@@ -11,12 +11,12 @@ class Rectangle:
         self.bottom_left = 0
         self.width = width
         self.height = height
-        self.end_points()
+        self.set_end_point()
 
     def area(self):
         return self.width * self.height
 
-    def end_points(self):
+    def set_end_point(self):
         self.top_right = self.top_left.coordX + self.width
         self.bottom_left = self.top_left.coordY + self.height
 
