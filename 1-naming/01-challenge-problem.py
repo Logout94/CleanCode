@@ -5,17 +5,17 @@ class Point:
 
 
 class Rectangle:
-    def __init__(self, starting_point, broad, high):
+    def __init__(self, starting_point, width, height):
         self.starting_point = starting_point
-        self.broad = broad
-        self.high = high
+        self.width = width
+        self.height = height
 
     def area(self):
-        return self.broad * self.high
+        return self.width * self.height
 
     def end_points(self):
-        top_right = self.starting_point.coordX + self.broad
-        bottom_left = self.starting_point.coordY + self.high
+        top_right = self.starting_point.coordX + self.width
+        bottom_left = self.starting_point.coordY + self.height
         print('Starting Point (X)): ' + str(self.starting_point.coordX))
         print('Starting Point (Y)): ' + str(self.starting_point.coordY))
         print('End Point X-Axis (Top Right): ' + str(top_right))
